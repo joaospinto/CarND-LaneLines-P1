@@ -92,6 +92,7 @@ Due to time constraints, I spent only the necessary amount of time to make the c
 There is also room for improving the way the discretization of the voting-based clustering algorithm used in `draw_lines` works. It often happens that many line segments corresponding to the same θ fall under adjacent (but different) classes, which results in their values being ignored for the purpose of estimating the corresponding lane direction.
 In fact, one could avoid doing this altogether, by implementing Hough's algorithm for lines (instead of line segments), which would be a more robust approach than doing line-segment detection following by clustering.
 It would also be interesting to use Hough's algorithm with some spline-like curves (possibly) to try to fit curved lane markings.
+Finally, tracking the lane boundaries across time on the videos, would definitely add more stability to our pipeline.
 
 ## Results on given images (full lines)
 `solidWhiteCurve.jpg`
